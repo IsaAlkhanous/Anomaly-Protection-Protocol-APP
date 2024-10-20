@@ -5,8 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ='icon' type="image/x-icon" href="images/app.ico">
     <title>A.P.P. Homepage</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #4cae4c;
+            }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <div id="error-message" class="error"></div>
+        <form onsubmit="return validateLogin()">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        const validCredentials = [
+            { username: 'member1', password: 'pass1' },
+            { username: 'member2', password: 'pass2' },
+            { username: 'member3', password: 'pass3' },
+             { username: 'member4', password: 'pass4' },
+            { username: 'member5', password: 'pass5' }
+        ];
+
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const isValid = validCredentials.some(cred =>
+                cred.username === username && cred.password === password
+            );
+
+            if (isValid) {
+                alert('Login successful!');
+                return true; 
+            } else {
+                document.getElementById('error-message').innerText = 'Invalid username or password';
+                return false; 
+            }
+        }
+    </script>
+
 </body>
 </html>
+
