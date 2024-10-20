@@ -3,99 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ='icon' type="image/x-icon" href="images/app.ico">
-    <title>A.P.P. Homepage</title>
- <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #5cb85c;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-            input[type="submit"]:hover {
-                background-color: #4cae4c;
-            }
-
-        .error {
-            color: red;
-            text-align: center;
-        }
-    </style>
+    <title>APP - Classified Archives</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="images/misty.jpg">
+        <!--Stles.css is the main css file-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+        <!--HEADER SECTION-->
+    <header><div id="heading">
+        <a href="/index.html">
+          <img src="/images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply; top: 10px;">A.P.P
+        </a>
 
-    <div class="login-container">
-        <h2>Login</h2>
-        <div id="error-message" class="error"></div>
-        <form onsubmit="return validateLogin()">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+        <a href="/LogIn_page.html" id="login" style="align-items:center; font-size:large">Personnel Access</a></div>
 
-    <script>
-        const validCredentials = [
-            { username: 'member1', password: 'pass1' },
-            { username: 'member2', password: 'pass2' },
-            { username: 'member3', password: 'pass3' },
-             { username: 'member4', password: 'pass4' },
-            { username: 'member5', password: 'pass5' }
-        ];
+        <div id ="bar"> <p id="bar-info">
+            <a href="">About &emsp;</a> 
+            <a href="">Community &emsp;</a> 
+            <a href="">Resources &emsp; </a>
+            <a href="">Sister Sites&emsp; </a>
+            <a href="">Contact us</a> </p></div>  
+    </header>
+      
 
-        function validateLogin() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
 
-            const isValid = validCredentials.some(cred =>
-                cred.username === username && cred.password === password
-            );
+    <!-- MAIN CONTENT SECTION -->
+    <main>
+        <h2>Warning the database is highly <big><b><mark style="background-color: red;">CLASSIFIED</mark></b></big> unauthorised personnel will be tracked, located and detained</h1>
+            <h2>Entities</h2>
+            <div class="entities-grid">
+                <!-- Entity Card 1 -->
+                <div class="entity-card">
+                    <h3>APP-246: Vorsicht</h3>
+                    <p>
+                        APP-246 is a silver sestertius from the Roman Empire, exhibiting anomalous properties related to luck and fate.
+                    </p>
+                    <a href="/entries/APP246.html">Read More</a>
+                </div>
+                <!-- Entity Card 2 -->
+                <div class="entity-card">
+                    <h3>APP-002: Amin</h3>
+                    <p>
+                        APP-002 is a lunchbag with infinite depth and anomalous radiation properties, designated Amin for safe usage.
+                    </p>
+                    <a href="/entries/APP002.html">Read More</a>
+                </div>
+                <!-- Entity Card 3 -->
+                <div class="entity-card">
+                    <h3>APP-128: Amin</h3>
+                    <p>
+                        APP-128 is a metamorphosing computer case with escalating processing power, classified as Amin due to its safe nature.
+                    </p>
+                    <a href="/entries/APP128.html">Read More</a>
+                </div>
+                <!-- Entity Card 4 -->
+                <div class="entity-card">
+                    <h3>APP-333: Vorsicht</h3>
+                    <p>
+                        APP-333 is a sentient angel statue with telepathic abilities, designated Vorsicht due to its potential threat.
+                    </p>
+                    <a href="/entries/APP333.html">Read More</a>
+                </div>
+                <!-- Entity Card 5 -->
+                <div class="entity-card">
+                    <h3>APP-724: Pericolo</h3>
+                    <p>
+                        APP-724 is an anomalous moth that causes explosive reactions when exposed to light, classified as Pericolo.
+                    </p>
+                    <a href="/entries/APP724.html">Read More</a>
+                </div>
+            </div>
+    </main>
 
-            if (isValid) {
-                alert('Login successful!');
-                return true; 
-            } else {
-                document.getElementById('error-message').innerText = 'Invalid username or password';
-                return false; 
-            }
-        }
-    </script>
-
+    <!-- FOOTER SECTION -->
+    <footer>
+        <hr>
+        Author: The Jorjan 
+        &copy; 2024 APP Foundation. All rights reserved.
+        <small><a href="mailto:email@gmail.com">TheFake@email.com</a></small>
+    </footer>
 </body>
 </html>
-
