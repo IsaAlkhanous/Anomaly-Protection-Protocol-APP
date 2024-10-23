@@ -3,55 +3,82 @@
 		<meta charset = "utf-8" />
 		<link rel ='icon' type="image/x-icon" href="../images/app.ico">
 		<title>APP-724 - APP Foundation</title>
-		<link rel="stylesheet" href="/styles.css">
+		<link rel="stylesheet" href="../styles.css">
 	</head>
 	<body>
 		<header><div id="heading">
-			<a href="/index.html">
-			  <img src="/images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply; top: 10px;">A.P.P
+			<a href="../index.html">
+			  <img class="logo" src="../images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply; top: 10px;">The A.P.P Foundation
 			</a>
 	
-			<a href="/LogIn_page.html" id="login" style="align-items:center; font-size:large">Personnel Access</a></div>
+			<a href="../LogIn_page.html" id="login" style="align-items:center; font-size:large">Personnel Access</a></div>
 	
 			<div id ="bar"> <p id="bar-info">
-				<a href="">About &emsp;</a> 
-				<a href="">Community &emsp;</a> 
-				<a href="">Resources &emsp; </a>
-				<a href="">Sister Sites&emsp; </a>
-				<a href="">Contact us</a> </p></div>  
+				<a href="">&emsp; About &emsp;</a> 
+				<a href="">&emsp; Community &emsp;</a> 
+				<a href="">&emsp; Resources &emsp; </a>
+				<a href="">&emsp; Sister Sites &emsp; </a>
+				<a href="">&emsp; Contact us &emsp;</a> </p></div>  
 		</header>
-		<img src = "../images/app-192x192.png" alt="The APP Foundation">
-		<h1>APP - 724</h1>
-		<dl>
-		<dt><i>Entity #:</i></dt>
-			<dd>724</dd>
-		</dl>
-		<dt><i>Entity Designation:</i></dt>
-			<dd>Pericolo</dd>
-		</dl>
-		<br>
-		<dt><i>Anomaly Protection Protocol:</i></dt>
-			<dd>
-				APP-724 is to be kept in High Security Holding Cell in Site-86. Its room shall be covered with Musou Black paint, and it shall not recieve any light under any circumstance, only observed through infrared vision.
-				Should it come into contact with any form of light, a Hades-Level Lockdown of Site-86 shall commence until APP-724 is secured in its cell.
-				Shoud if it come into contact with natural sunlight, a Thanatos-Level End-of-Humanity event will be declared and Personnel should follow procedure to prolong the life of any human or anomaly in the vicinity as much as possible.
-			</dd>
-		</dl>
-		<br>
-		<dt><i>Entity Description:</i></dt>
-			<dd>
-				APP-724 is a baphomet moth (Creatonotos gangis) of average size.
-				It was procured in <span class='redacted'>---------</span>, Japan in a dark apartment filled with similarly caged insects, none of which were anomalous, except the center piece of the collection, now known as APP-724.
-				The cage it resided in was covered with a Vantablack cloth with a sticky note attached reading (after translation): "Keep away from light sources".
-				SF Personnel responsible for retrieval did not heed the warning and lifted the veil to observe and describe APP-724, allowing his flashlight to reach it.
-				Approximately 5 seconds after, a localised low-yield explosion occured within SF Personnel's flashlight akin to a neutron bomb, killing him and severly injuring other SF Personnel in the vicinity.
-			</dd>
+		
+		<nav>
+			<h1>Index</h1>
+		<ul>
+			<li class="index"><a href="#app">Anomaly Protection Protocol</a></li>
 			<br>
-			<dd>
-				After careful retrieval and analysis of what has transpired, it is theorised that any light that reaches APP-724 will have its source explode similarly to a neutron bomb of the same size.
-				As such, it has been designated Pericolo, and no experiment or test will be allowed without Level-&Omega; Clearance from at least 10 Level-&omicron; Personnel.
-			</dd>
-		</dl>
+			<li class="index"><a href="#retrieval">Retrieval</a></li>
+			<br>
+			<li class="index"><a href="#entity">Entity Description</a></li>
+		</ul>
+		</nav>
+		
+		<div class="entry">
+			<h1>APP - 724</h1>
+			<dl>
+			<dt><i>Entity #:</i></dt>
+				<dd>724</dd>
+			</dl>
+			<dt><i>Entity Designation:</i></dt>
+				<dd>Pericolo</dd>
+			</dl>
+			<br>
+			<dt id="app"><i>Anomaly Protection Protocol:</i></dt>
+				<dd>
+					APP-724 is to be kept in High Security Holding Cell in Site-86. Its room shall be covered with Musou Black paint, and it shall not recieve any light under any circumstance, only observed through infrared vision.
+					Should it come into contact with any form of light, a Hades-Level Lockdown of Site-86 shall commence until APP-724 is secured in its cell.
+					Should it come into contact with natural sunlight, a Thanatos-Level End-of-Humanity event will be declared and Personnel should follow procedure to prolong the life of any human or anomaly in the vicinity as much as possible.
+				</dd>
+			</dl>
+			<br>
+			<dt id="retrieval"><i>Retrieval:</i></dt>
+				<dd>
+					It was procured in ████████, Japan in a dark apartment filled with similarly caged insects, none of which were anomalous, except the center piece of the collection, now known as APP-724.
+					The cage it resided in was covered with a Vantablack cloth with a sticky note attached reading (after translation): "Keep away from light sources".
+					SF Personnel responsible for retrieval did not heed the warning and lifted the veil to observe and describe APP-724, allowing his flashlight to reach it.
+					Approximately five seconds after, a localised low-yield explosion occured within SF Personnel's flashlight akin to a neutron bomb, killing him and severly injuring other SF Personnel in the vicinity.
+				</dd>
+			</dl>
+			<br>
+			<dt id="entity"><i>Entity Description:</i></dt>
+				<dd>
+					<figure>
+						<img class="picture" src="../images/APP724.png" alt="An unnaturally blue male baphomet moth.">
+						<figcaption>APP-724<br>(Artist rendering based on description)</figcaption>
+					</figure>
+					APP-724 is a male baphomet moth (Creatonotos gangis) of average size; 4cm in length (9cm with enlarged coremata).
+					The only feature of note is its unusual colour, appearing a vibrant deep blue.
+					When exposed to light of any kind, its coremata enlarge, and electricity begins arcing between them five times.
+					This warns any bystander of a five second timer until a neutron bomb-like explosion occurs within the light source, proportional to its size.
+					This anomalous attribute could lead to catastrophic, world-ending results should it encounter a light source at least ██ km in diameter.
+				<br>
+				<br>
+					As such, it has been designated Pericolo, and no experiment or test will be allowed without Level-&Omega; Clearance from at least 10 Level-&omicron; Personnel.
+				</dd>
+			</dl>
+		</div>
+		<div class="prevnext">
+			<p><a href="APP333.html">Previous</a> | <b>APP-724</b> | <a href="">Next<a></p>
+		</div>
 		<footer style="position: relative;bottom: 0px;text-align:center">
 			<hr> <!--Thematic break-->
 			Author: GRP_11
