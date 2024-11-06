@@ -37,6 +37,4 @@ This project is a website similar to the SCP Foundation, dedicated to documentin
 - Improving the Home page layout and content.
 - Creating individual web pages for each bar in the navigation menu (About, Community, Resources, etc.).
 - Making entities searchable.
-- Adding a navigation system in the entity pages to skip to specific sections.
-- Incorporating entity images and improving content structure.
 
