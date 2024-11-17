@@ -1,80 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ='icon' type="image/x-icon" href="images/app.ico">
     <title>Login</title>
+	
+	<link rel="stylesheet" href="styles.css">
 
-    <style type = "text/css">
-      body{
-        background-color:#2d3250;
-      }
-      
-      div{
-          text-align: center;
-          position:absolute;
-          top:50%;
-          left:50%;
-          transform: translateX(-50%) translateY(-50%);
-      }
-
-      h2{
-        color: #ffff;
-      }
-
-      label{
-        color: #ffff;
-        font-size: 17px;
-      }
-
-      a.nodec{
-        text-decoration: none;
-        color: #ffff;
-      }
-      a:hover{
-        text-decoration: underline;
-        color: #fbb17a;
-      }
-      
-      [type="submit"]{
-        background-color: #ffa75d;
-        color: #ffff;
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 0 6px #ffa75d;
-        padding: 13px 95px;
-      }
-
-      input[type="text"]{
-        width: 90%;
-        background: #424769;
-        border: none;
-        padding: 10px;
-        font-size: 17px;
-        color: #ffff;
-      }
-
-      input[type="password"]{
-        width: 90%;
-        background: #424769;
-        border: none;
-        padding: 10px;
-        font-size: 17px;
-        color: #ffff;
-      }
-    </style>
 </head>
-<body>
+<body id="loginbody">
 
-  <a class="nodec" href="/index.html" alt="Homepage">< Home </a>
-  <div>
-   <img src="images/scp_icon.svg" alt="logo" height="100px">
+  <a class="nodec" href="index.html" alt="Homepage">Home</a>
+   <img src="images/app.svg" alt="logo" height="150px">
 
-  <table style=" padding: 30px;">
+  <table class="logintable">
     <caption><h2>Personnel Access</h2></caption>
 
-        <form action="/index.html" methods="POST">
+        <form id="001" action="index.html" methods="POST">
             <tr>
                 <th><label for="username">User ID:</label> <br>
                 <input type="text" id="username" placeholder="ID" required><br></th>
@@ -83,17 +26,25 @@
                 <th> <label for="password">Access Key:</label><br>
                 <input type="password" id="password" placeholder="Key" required><br></th>
             </tr>
+          
             <tr>
-              <th><label for="s" >remember me:</label></th>
-              <th><input type="checkbox" id="s"required ></th>
-            </tr>
-            <tr></tr>
-            <tr>
-                <th><input type="submit" value="Sign up"></th>
+                <th><input type="submit" value="Log In"></th>
             </tr>
         </form>
 
   </table>
-  </div>
 </body>
+
+<script>
+	document.getElementById("001").addEventListener("submit", function (event) {
+		event.preventDefault();
+		
+		const username = document.getElementById("username").value;
+		
+		sessionStorage.setItem("001", username);
+		
+		window.location.href = "index.html";
+	})
+</script>
+
 </html>

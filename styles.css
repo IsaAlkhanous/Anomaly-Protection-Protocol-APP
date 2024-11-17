@@ -1,6 +1,7 @@
 
 #heading
  {
+	font-family: monospace;
     padding: 15px;      
     border: 2px solid black;
     background-color:#830f0f;
@@ -64,6 +65,79 @@ footer
 	border: 5px solid maroon;
 	border-radius: 5px;
 }
+
+/*Login CSS;*/
+
+button
+{
+	font-size: 220%;
+	padding: 1% 5%;
+	border: 5px solid crimson;
+	border-radius: 5px;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+
+button:hover
+{
+	border-color: grey;
+	background-color: crimson;
+}
+
+html.login
+{
+	height: 100%;
+}
+
+#loginbody
+{
+	background-image: linear-gradient(darkred, indianred , whitesmoke);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: 100% 100%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+a.nodec
+{
+	color: black;
+	position: fixed;
+	top: 0;
+	margin-top: 1%;
+	left: 0;
+	margin-left: 2%;
+}
+
+a.nodec:hover
+{
+	color: red;
+	text-decoration: underline;
+}
+
+.logintable
+{
+	margin: auto;
+	background-color: lightcoral;
+	border: 5px solid maroon;
+	border-radius: 5px;
+}
+
+caption, a.nodec, label
+{
+	font-size: 200%;
+}
+
+caption
+{
+	margin: auto;
+}
+
+input
+{
+	margin-top: 5%;
+}
+
 
 /*Entries CSS;*/
 
@@ -140,12 +214,12 @@ figure
 	color: crimson;
 }
 
-dl, dt, dd, main
+dl, dt, dd, main, a.nodec, tr, th, input, button
 {
 	font-family: monospace;
 }
 
-h1, h2, h3
+h1, h2, h3, a.nodec
 {
 	letter-spacing: 3px;
 	text-align: center;

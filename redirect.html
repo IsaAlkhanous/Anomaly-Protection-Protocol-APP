@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ='icon' type="image/x-icon" href="images/app.ico">
+    <title>REDIRECT</title>
+	
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="loginbody">
+	<div id="warning">
+		<a class="nodec" href="index.html" alt="Homepage">Home</a>
+		<img class="logo" src="./images/app.svg" alt="APP logo" style="width:125px; mix-blend-mode: multiply;">
+		<h1>
+			<u>THIS IS A HIGHLY CONFIDENTIAL ENTRY</u>. IF YOU HAVE SURVIVED THIS CHECK, YOU CAN PROCEED SAFELY.<br><br>
+			IF ANY OF THE INFORMATION CONTAINED IN THIS ENTRY WERE TO BE LEAKED,<br><u>A KHAOS-LEVEL END-OF-THE-WORLD EVENT</u> WILL OCCUR.<br><br>
+			THE APP FOUNDATION CANNOT TOLERATE SUCH A POSSIBILITY.<br>
+			CHOOSING TO PROCEED WILL TRIGGER A <u>POWERFUL MEMETIC IMAGE</u> KNOWN AS APP-500 THAT WILL CAUSE <u>IMMEDIATE CARDIAC ARREST</u> TO ANY UNAUTHORIZED VIEWER.<br><br>
+			THERE IS STILL TIME IF YOU WISH TO GO BACK.
+		</h1>
+		<button id="memetic">PROCEED</button>
+	</div>
+</body>
+
+<script>
+
+	document.getElementById("memetic").addEventListener("click", function(event){
+	
+		if(sessionStorage.getItem("allow") === "true"){
+				window.location.href = "./entries/APP001.html";
+				
+		} else { 
+			const body = document.getElementById("loginbody");
+			const warning = document.getElementById("warning");
+			
+			body.removeChild(warning);
+			
+			document.body.style.backgroundImage = "url('./images/Memetic.gif')";
+			
+			setTimeout(cont001, 5000); 
+		
+		}
+	});
+	
+	function cont001() {
+		document.body.style.backgroundImage = "linear-gradient(darkred, indianred , whitesmoke)";
+		const allow = "true";
+		sessionStorage.setItem("allow", allow);
+		
+		setTimeout(life, 500);
+	}
+	
+	function life() {
+		
+		alert("Continued life signs detected. Proceeding to entry.");
+		window.location.href = "./entries/APP001.html";
+	}
+	
+</script>
+
+</html>
