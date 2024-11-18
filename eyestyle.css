@@ -1,0 +1,56 @@
+/* Styles for the eye container */
+.eye {
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle, #da4444, whitesmoke, white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Styles for the 3D canvas */
+#container3D {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Styles for the options container */
+.options-container {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+/* Style each option */
+.options-container .option {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
+/* Position each link around the eye */
+.options-container .option:nth-child(1) { transform: rotate(0deg) translate(200px) rotate(-0deg); }
+.options-container .option:nth-child(2) { transform: rotate(60deg) translate(200px) rotate(-60deg); }
+.options-container .option:nth-child(3) { transform: rotate(120deg) translate(200px) rotate(-120deg); }
+.options-container .option:nth-child(4) { transform: rotate(180deg) translate(200px) rotate(-180deg); }
+.options-container .option:nth-child(5) { transform: rotate(240deg) translate(200px) rotate(-240deg); }
+.options-container .option:nth-child(6) { transform: rotate(300deg) translate(200px) rotate(-300deg); }
+
+/* Styles for the links */
+.option a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.option a:hover {
+  color: red;
+}

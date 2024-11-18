@@ -1,57 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
-#heading
- {
-	font-family: monospace;
-    padding: 15px;      
-    border: 2px solid black;
-    background-color:#830f0f;
-    font-weight: bolder;
-    font-size: xx-large;
+@font-face {
+    font-family: 'Bauhaus Demi';
+    src: url('./fonts/Bauhaus Demi/Bauhaus Demi.otf');
+}
+
+/* ============================================
+   Header Styling and Nav bar
+   ============================================ */
+header {
+    width: 100%;
+    background-color: rgb(163, 9, 9);
+    font-family: 'Bauhaus Demi', sans-serif;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.header-top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    /*box-sizing: border-box;*/ 
- }
-#heading a
- {
-    color:black;
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-size: 40px;
+    color: black;
     display: flex;
-    text-decoration: none;
     align-items: center;
-    transition: color 0.3s ease, box-shadow 0.3s ease;
- }
-#heading a:hover
- {
-    box-shadow: 0 0 5px rgba(156, 125, 125, 0.8);
- }
- 
-footer
-{
-	position: relative;
-	bottom: 0px;
-	text-align:center;
+    text-decoration: none; /* Remove underline */
 }
 
-#bar
- {
-    padding-left: 50%;
-    margin: 0px;
-    background-color: rgb(29, 28, 28);
-    border: 2px solid rgb(29, 28, 28);
- }
-#bar a
-{
+.logo img {
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+#login {
+    color: black;
+    font-size: 20px;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 17px;
-
 }
-#bar a:hover
-{
+
+/* Header Hidden State */
+.header-hidden {
+    transform: translateY(-100%);
+}
+#bar {
+    width: 100%;
+    background-color: rgb(140, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+}
+
+#bar a {
+    color: black;
+    font-size: 16px;
+}
+
+#bar a:hover {
     background-color: #830f0f3a;
     font-size: 19px;
 }
 
+
+.entities-grid {
+    text-align: center;
+}
+ /* ============================================
+   footer Styling
+   ============================================ */
+   footer {
+    width: 100%; /* Ensure the footer spans the entire width */
+	bottom: 0;
+	left:0;
+    text-align: center;
+    padding: 10px 20px;
+    position:static;
+	padding-top: 10px;
+	
+}
+
+/* ============================================
+Entity Styling
+============================================ */
+
+.entity_description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
 .entities-grid
 {
 	text-align: center;
@@ -66,7 +114,9 @@ footer
 	border-radius: 5px;
 }
 
-/*Login CSS;*/
+ /* ============================================
+   Login page Styling
+   ============================================ */
 
 button
 {
@@ -145,8 +195,12 @@ body
 {
 
 	background-image: linear-gradient(white, whitesmoke, #f2d5d5);
+    min-height: 100vh;
+    padding-top: 150px;
 }
-
+main{
+	max-width: 90%;
+}
 .entry
 {
 	
@@ -155,7 +209,6 @@ body
 	display: flex;
 	flex-direction: column;
 }
-
 nav
 {
 	margin-top: 4%;
@@ -248,3 +301,17 @@ dd
 	background-color: #f0efee;
 }
 
+/* Static Overlay Styles */
+.static-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    background: rgba(0, 0, 0, 0.1); /* Slightly transparent background */
+    z-index: 9999; /* Ensure it stays on top */
+    background: url('./images/static.gif' );
+	background-size: cover;
+	opacity: 0.15;
+}

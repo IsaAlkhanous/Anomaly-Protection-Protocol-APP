@@ -4,27 +4,74 @@
     <meta charset="UTF-8">
     <title>11_11</title>
     <link rel="icon" type="image/jpg" href=" ">
-
+    <script type=module src="./js/main.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      
+      @font-face {
+        font-family: 'Bauhaus Demi';
+        src: url('./fonts/Bauhaus Demi/Bauhaus Demi.otf');
+      }
+      
+      /* Styling for the header */
+      header {
+        width: 100%;
+        background-color: rgb(163, 9, 9);
+        font-family: 'Bauhaus Demi', sans-serif;
+      }
+      
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Align items vertically */
+        padding: 10px 20px;
+      }
+      
+      .logo a {
+        font-size: 40px;
+        color: black;
+        display: flex;
+        align-items: center;
+        text-decoration: none; /* Remove underline */
+      }
+      
+      .logo img {
+        margin-right: 10px; /* Space between logo image and text */
+      }
+      
+      #login {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      /* Styling for the bar */
+      #bar {
+        width: 100%;
+        background-color: rgb(140, 0, 0);
+        text-align: center;
+        padding: 5px 0;
+      }
+      
+      #bar a{
+        color: black;
+        font-size: 16px;
+      }
+      
+  </style>
 </head>
 <body>
-    <header><div id="heading">
-          <a href="index.html">
-            <img src="images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply; top: 10px;">A.P.P
-          </a>
-        
+  
+  <my-header></my-header>
+  <my-footer></my-footer>
 
-      <a href="LogIn_page.html" id="login" style="align-items:center;">Sign in</a></div>
-
-    <div id ="bar"> <p id="bar-info">About &emsp; Community &emsp; Resources &emsp; Sister Sites&emsp; Contact us </p></div>  
-  </header>
-
-
-    <footer style="position: relative;bottom: 0px;text-align:center">
-      <hr> <!--Thematic break-->
-      Author: GRP_11
-      &copy; copyrights reserved
-      <small><a href="mailto:email@gmail.com">TheFake@email.com</small>
-  </footer>
+   
     
 </body>
 </html>

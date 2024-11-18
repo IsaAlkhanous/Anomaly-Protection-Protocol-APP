@@ -4,23 +4,12 @@
 		<link rel ='icon' type="image/x-icon" href="../images/app.ico">
 		<title>APP-001 - APP Foundation</title>
 		<link rel="stylesheet" href="../styles.css">
+		<script type=module src="../js/main.js"></script>
 	</head>
 	<body>
-		<header><div id="heading">
-			<a href="../index.html">
-			  <img class="logo" src="../images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply; top: 10px;">The A.P.P Foundation
-			</a>
-	
-			<a href="../LogIn_page.html" id="login" style="align-items:center; font-size:large">Personnel Access</a></div>
-	
-			<div id ="bar"> <p id="bar-info">
-				<a href="">&emsp; About &emsp;</a> 
-				<a href="">&emsp; Community &emsp;</a> 
-				<a href="">&emsp; Resources &emsp; </a>
-				<a href="">&emsp; Sister Sites &emsp; </a>
-				<a href="">&emsp; Contact us &emsp;</a> </p></div>  
-		</header>
+		<my-header></my-header>
 		
+		<main>
 		<nav>
 			<h1>Index</h1>
 		<ul>
@@ -60,6 +49,10 @@
 			<br>
 			<dt id="entity"><i>Entity Description:</i></dt>
 				<dd>
+					<figure>
+						<img class="picture" src="../images/entity001.gif" alt="A worn out pink lunchbag.">
+						<figcaption>APP-████</figcaption>
+					</figure>
 					APP-001, known to all in the foundation as <span id="username"></span>, is a higher-dimensional being that has willed us to existence by commanding APP-001-1, 001-2, 001-3, and 001-4, collectively known as The Writers.
 					The Writers are beings that follow APP-001's teachings of reality creation, including matter formation and destruction, presentation of the universe, and physical logic.
 					In ██-██-████, The Writers made specific humans aware of abnormalities in their creations, anomalous entities we call APPs.
@@ -76,12 +69,10 @@
 		<div class="prevnext">
 			<p><a href="APP724.html">Previous</a> | <b>APP-001</b> | <a href="">Next<a></p>
 		</div>
-		<footer style="position: relative;bottom: 0px;text-align:center">
-			<hr> <!--Thematic break-->
-			Author: GRP_11
-			&copy; copyrights reserved
-			<small><a href="mailto:email@gmail.com">TheFake@email.com</small>
-		</footer>
+		</main>
+
+		<div class="static-overlay"></div>
+		<my-footer></my-footer>
 	</body>
 	<script>
 		const name = sessionStorage.getItem("001");
