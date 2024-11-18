@@ -20,6 +20,7 @@
     align-items: center;
     transition: color 0.3s ease, box-shadow 0.3s ease;
  }
+
 #heading a:hover
  {
     box-shadow: 0 0 5px rgba(156, 125, 125, 0.8);
