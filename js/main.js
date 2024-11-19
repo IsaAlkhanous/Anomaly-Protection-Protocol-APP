@@ -12,12 +12,12 @@ class myHeader extends HTMLElement{
           <a href="../LogIn_page.html" id="login">Personnel Access</a>
       </div>
       <div id="bar">
-      <a href="entities.html">Entities</a>&emsp;
-        <a href="about.html">About</a>&emsp;
-        <a href="community.html">Community</a>&emsp;
-        <a href="resources.html">Resources</a>&emsp;
-        <a href="sister_sites.html">Sister Sites</a>&emsp;
-        <a href="contact.html">Contact Us</a>&emsp;
+      <a href="../entities.html">Entities</a>&emsp;
+        <a href="../about.html">About</a>&emsp;
+        <a href="../community.html">Community</a>&emsp;
+        <a href="../resources.html">Resources</a>&emsp;
+        <a href="../sister_sites.html">Sister Sites</a>&emsp;
+        <a href="../contact.html">Contact Us</a>&emsp;
       </div>
     </header> `
   }

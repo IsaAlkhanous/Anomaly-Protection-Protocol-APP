@@ -78,5 +78,10 @@
 		const name = sessionStorage.getItem("001");
 		const place = document.querySelector("#username");
 		place.innerHTML = name;
+		setTimeout(seentoomuch,2000)
+		function seentoomuch(){
+			alert("ERROR.. UNAUTHORISED ACCESS DETECTED")
+			window.location.replace('https://www.google.com')
+		}
 	</script>
 </html>
