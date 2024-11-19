@@ -9,7 +9,7 @@ class myHeader extends HTMLElement{
             A.P.P Foundation
           </a>
         </div>
-        <a href="LogIn_page.html" id="login">Personnel Access</a>
+        <a href="../LogIn_page.html" id="login">Personnel Access</a>
       </div>
       <div id="bar">
       <a href="entities.html">Entities</a>&emsp;
@@ -27,9 +27,9 @@ class myFooter extends HTMLElement{
     this.innerHTML = `
      <footer>
       <hr> <!--Thematic break-->
-      Author: GRP_11
-      &copy; copyrights reserved
-      <small><a href="mailto:email@gmail.com">TheFake@email.com</small>
+      <p>Author: GRP_11 &emsp;
+      <small><a href="mailto:email@gmail.com">TheFake@email.com</small> &emsp; 
+      &copy; copyrights reserved &emsp; </p>
   </footer>
     `
   }

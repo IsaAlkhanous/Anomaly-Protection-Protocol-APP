@@ -1,5 +1,5 @@
 /* Styles for the eye container */
-.eye {
+.eye{
   height: 100vh;
   margin: 0;
   background: radial-gradient(circle, #da4444, whitesmoke, white);
@@ -8,12 +8,16 @@
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  font-family: 'Bauhaus Demi';
 }
-
+.preventscroll{
+  padding-top:0px;
+  overflow: hidden;
+}
 /* Styles for the 3D canvas */
-#container3D {
-  width: 100vw;
-  height: 100vh;
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,10 +40,10 @@
 }
 
 /* Position each link around the eye */
-.options-container .option:nth-child(1) { transform: rotate(0deg) translate(200px) rotate(-0deg); }
+.options-container .option:nth-child(1) { transform: rotate(0deg) translate(175px) rotate(-0deg); }
 .options-container .option:nth-child(2) { transform: rotate(60deg) translate(200px) rotate(-60deg); }
 .options-container .option:nth-child(3) { transform: rotate(120deg) translate(200px) rotate(-120deg); }
-.options-container .option:nth-child(4) { transform: rotate(180deg) translate(200px) rotate(-180deg); }
+.options-container .option:nth-child(4) { transform: rotate(180deg) translate(230px) rotate(-180deg); }
 .options-container .option:nth-child(5) { transform: rotate(240deg) translate(200px) rotate(-240deg); }
 .options-container .option:nth-child(6) { transform: rotate(300deg) translate(200px) rotate(-300deg); }
 
@@ -53,4 +57,5 @@
 
 .option a:hover {
   color: red;
+  font-size: 20px;
 }

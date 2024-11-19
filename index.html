@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D Eye Animation - APP Foundation</title>
+    <title>APP Foundation</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/app.ico">
     <link rel="stylesheet" href="eyestyle.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <script type="module" src="js/eye.js"></script> <!-- Link to your JavaScript file -->
-    <script type="module" src="js/main.js"></script> 
 </head>
-<body class="eye">
+<body class="preventscroll">
     <!-- Header -->
     <header>
         <div class="header-top">
-          <div class="logo">
+         <div class="logo">
             <a href="../index.html">
               <img src="../images/app.svg" alt="APP logo" style="width:80px; mix-blend-mode: multiply;">
               A.P.P Foundation
             </a>
           </div>
-          <a href="LogIn_page.html" id="login">Personnel Access</a>
+            <a href="LogIn_page.html" id="login">Personnel Access</a>
         </div>
+    </header>
 
-    <!-- Eye Animation Container -->
-    <div class="eye">
-        <!-- Container for the 3D animation -->
+        <div class="eye">
+        <!-- Eye Animation Container -->
         <div id="container3D"></div>
+        <!-- Container for the 3D animation -->
     
         <!-- Options Container -->
         <div class="options-container">
@@ -36,8 +38,5 @@
             <div class="option"><a href="contact.html">Contact Us</a></div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <my-footer></my-footer>
 </body>
 </html>
