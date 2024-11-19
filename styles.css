@@ -31,13 +31,16 @@ header {
     align-items: center; /* Align items vertically */
     padding: 10px 20px;
 }
-
 .logo a {
-    font-size: 40px;
+	font-size: 40px;
     color: black;
     display: flex;
     align-items: center;
     text-decoration: none; /* Remove underline */
+}
+.logo a:hover{
+	text-decoration: none;
+	color: rgb(48, 2, 2);
 }
 
 .logo img {
@@ -49,7 +52,9 @@ header {
     font-size: 20px;
     text-decoration: none;
 }
-
+#login:hover{
+	color: rgb(48, 2, 2);
+}
 /* Header Hidden State */
 .header-hidden {
     transform: translateY(-100%);
