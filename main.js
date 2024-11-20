@@ -1,6 +1,6 @@
 class myHeader extends HTMLElement{
   connectedCallback() {
-	const path = this.getAttribute('path') || './';
+	const path = this.getAttribute('path');
 	
     this.innerHTML = `
     <header>
