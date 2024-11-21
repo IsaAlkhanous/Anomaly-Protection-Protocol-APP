@@ -18,17 +18,17 @@ header {
     width: 100%;
     background-color: rgb(163, 9, 9);
     font-family: 'Bauhaus Demi', sans-serif;
-    position: fixed; /* Fix the header at the top */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transition: transform 0.3s ease-in-out;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically */
+    align-items: center;
     padding: 10px 20px;
 }
 .logo a {
@@ -36,7 +36,7 @@ header {
     color: black;
     display: flex;
     align-items: center;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 .logo a:hover{
 	text-decoration: none;
@@ -44,7 +44,7 @@ header {
 }
 
 .logo img {
-    margin-right: 10px; /* Space between logo image and text */
+    margin-right: 10px;
 }
 
 #login {
@@ -84,7 +84,7 @@ header {
    footer Styling
    ============================================ */
    footer {
-    width: 100%; /* Ensure the footer spans the entire width */
+    width: 100%;
 	bottom: 0;
 	left:0;
     text-align: center;
@@ -191,6 +191,13 @@ caption
 input
 {
 	margin-top: 5%;
+}
+
+img.ss
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -313,9 +320,9 @@ dd
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Allow clicks to pass through */
-    background: rgba(0, 0, 0, 0.1); /* Slightly transparent background */
-    z-index: 9999; /* Ensure it stays on top */
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 10;
     background: url('./images/static.gif' );
 	background-size: cover;
 	opacity: 0.15;
