@@ -176,11 +176,16 @@ a.nodec:hover
 	background-color: lightcoral;
 	border: 5px solid maroon;
 	border-radius: 5px;
+	padding: 30px;
 }
 
-caption, a.nodec, label
+caption, a.nodec
 {
 	font-size: 200%;
+}
+
+label{
+	font-size: 17px;
 }
 
 caption
@@ -327,3 +332,30 @@ dd
 	background-size: cover;
 	opacity: 0.15;
 }
+
+input[type="text"]{
+	width: 90%;
+	background: crimson;
+	border: none;
+	padding: 10px;
+	font-size: 17px;
+	color: #ffff;
+}
+
+input[type="password"]{
+	width: 90%;
+	background: crimson;
+	border: none;
+	padding: 10px;
+	font-size: 17px;
+	color: #ffff;
+}
+
+[type="submit"]{
+	background-color: crimson;
+	color: #ffff;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0 0 8px crimson;
+	padding: 13px 95px;
+  }
