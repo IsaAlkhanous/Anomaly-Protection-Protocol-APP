@@ -5,15 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
-    <script rel=module src="./js/main.js"></script>
+   <script rel=module src="./js/main.js"> </script>
+        
+    
+    <script>
+        var iconImg;
+        var pictures=["moriarty","poison","ghost"];
+        var descriptions=["the enemy of sherlock holmes", "when of weirdest poisen", "ghost make humen dessapearing"];
+
+        function pickImage()
+        {
+            var index = Math.floor( Math.random() * 3 );
+            iconImg.setAttribute( "src","/images/" + pictures[ index ] + ".png" );
+            iconImg.setAttribute( "alt", descriptions[ index ] );
+        }
+
+        function start()
+        {
+            iconImg = document.getElementById( "image" );
+            iconImg.addEventListener( "click", pickImage, false );
+        }
+
+        window.addEventListener( "load", start, false );
+    </script>
 </head>
 <body class="eye">
     <my-header></my-header>
 
   <h1>About the APP Foundation</h1>
-  <p>                   
-      The APP Foundation is dedicated to the identification, containment, and study of anomalous entities to ensure public safety and advance scientific understanding. Our mission is to safeguard humanity by managing anomalies that pose potential threats while exploring their unique properties for the betterment of society.
-    </p>
-    
+  <table>
+     <main>
+        <nav>
+            <img id = "image" src = "moriarty.png" alt = "Common Programming Error">
+        </nav>
+        <div class="entry">
+            <p>
+            The APP Foundation is at the forefront of ensuring public safety and advancing scientific discovery by managing anomalous entities.
+            These entities, which defy conventional understanding, can pose significant risks if left unchecked. Through systematic
+            identification, containment, and study, the Foundation not only protects society but also strives to unlock the potential of these
+            anomalies for the greater good. This effort is guided by a commitment to safety, research, and responsible exploration.
+            </p>
+            <br>
+            <dl>
+                <dt>1. Identification and Classification of Anomalies:</dt>
+                <br>
+                <dd>
+                The first step in the Foundation’s mission is the rigorous identification and classification of anomalous entities.
+                These anomalies can range from objects with unique physical properties to beings that exhibit unexplainable behaviors.
+                Advanced detection systems, specialized teams, and global monitoring networks ensure early identification of these phenomena.
+                Each anomaly is carefully assessed for its properties, potential threats, and effects on its environment. By maintaining an
+                exhaustive catalog, the Foundation can respond efficiently to new discoveries and ensure that they are appropriately managed.    
+                </dd>
+                
+                <br>
+
+                <dt>2. Containment and Public Safety Measures:</dt>
+                <br>
+                <dd>
+                Once identified, the containment of anomalies becomes the top priority to mitigate risks to humanity and the environment.
+                Secure facilities equipped with cutting-edge technology are utilized to house anomalies, preventing them from causing harm.
+                Each containment protocol is tailored to the specific characteristics of the entity, ensuring maximum control. In parallel,
+                the Foundation works discreetly to limit public exposure to anomalies, employing strategies such as misinformation or cloaking
+                to preserve societal order and prevent panic.
+                </dd>
+
+                <br>
+
+                <dt>3. Research and Ethical Exploration of Anomalies:</dt>
+                <br>
+                <dd>
+                Beyond containment, the APP Foundation is committed to advancing human knowledge by studying the properties of these anomalies.
+                Dedicated research teams delve into their scientific and philosophical implications, seeking breakthroughs that could benefit
+                humanity. From discovering novel energy sources to advancing medicine, the Foundation’s research emphasizes ethical
+                considerations and responsible innovation. Each discovery is carefully evaluated to balance its potential advantages against
+                risks to humanity.
+                </dd>
+            </dl>
+
+        </div>
+     </main>
+  </table>
 </body>
 </html>
