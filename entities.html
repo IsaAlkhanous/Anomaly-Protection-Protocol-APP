@@ -4,83 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APP Foundation - Classified Archives</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/app.ico">
-        <!--Stles.css is the main css file-->
     <link rel="stylesheet" href="styles.css">
-    <script type=module src="./js/main.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-        <!--HEADER SECTION-->
-		<my-header></my-header>
+
+		<my-header path=''></my-header>
       
-
-
-    <!-- MAIN CONTENT SECTION -->
     <main class="entity_description">
         <h1>WARNING: This database is highly <big><b><mark style="background-color: red;">CLASSIFIED</mark></b></big>.<br>Unauthorised personnel will be tracked, located, and detained.</h1>
 		<br>
             <h2>Entities</h2>
             <div class="entities-grid">
-                <!-- Entity Card 1 -->
+
                 <div class="entity-card">
-                    <h3 style="color: darkgreen;">APP-002: Amin</h3>
+                    <h3 style="color: darkgreen;">APP-002: Amin</h3><br>
                     <p>
                         APP-002 is a lunchbag with infinite depth and anomalous radiation properties, designated Amin for safe usage.
-                    </p>
+                    </p><br>
                     <a href="./entries/APP002.html">View Entry</a>
                 </div>
-                <!-- Entity Card 2 -->
+
                 <div class="entity-card">
-                    <h3 style="color: darkgreen;">APP-128: Amin</h3>
+                    <h3 style="color: darkgreen;">APP-128: Amin</h3><br>
                     <p>
                         APP-128 is a metamorphosing computer case with escalating processing power, classified as Amin due to its safe nature.
-                    </p>
+                    </p><br>
                     <a href="./entries/APP128.html">View Entry</a>
                 </div>
-				<!-- Entity Card 3 -->
+
                 <div class="entity-card">
-                    <h3 style="color: darkorange;">APP-246: Vorsicht</h3>
+                    <h3 style="color: darkorange;">APP-246: Vorsicht</h3><br>
                     <p>
                         APP-246 is a silver sestertius from the Roman Empire, exhibiting anomalous properties related to luck and fate.
-                    </p>
+                    </p><br>
                     <a href="./entries/APP246.html">View Entry</a>
                 </div>
-                <!-- Entity Card 4 -->
+
                 <div class="entity-card">
-                    <h3 style="color: darkorange;">APP-333: Vorsicht</h3>
+                    <h3 style="color: darkorange;">APP-333: Vorsicht</h3><br>
                     <p>
                         APP-333 is a sentient angel statue with telepathic abilities, designated Vorsicht due to its potential threat.
-                    </p>
+                    </p><br>
                     <a href="./entries/APP333.html">View Entry</a>
                 </div>
                 <div class="entity-card">
-                    <h3 style="color: darkorange;">APP-501: Vorsicht</h3>
+                    <h3 style="color: darkorange;">APP-501: Vorsicht</h3><br>
                     <p>
-                        APP-501 is a 3 eyed feline looking creature that attacks when it feels threatned, Should be tranqualized before approaching.
-                    </p>
+                        APP-501 is a 3 eyed, 3 tailed, size-changing feline creature that attacks when it feels threatned, Should be tranqualized before approaching.
+                    </p><br>
                     <a href="./entries/APP501.html">View Entry</a>
                 </div>
-                <!-- Entity Card 5 -->
+
                 <div class="entity-card">
-                    <h3 style="color: crimson;">APP-724: Pericolo</h3>
+                    <h3 style="color: crimson;">APP-724: Pericolo</h3><br>
                     <p>
                         APP-724 is an anomalous moth that causes explosive reactions when exposed to light, classified as Pericolo.
-                    </p>
+                    </p><br>
                     <a href="./entries/APP724.html">View Entry</a>
                 </div>
-				 <!-- Entity Card 0 -->
+
                 <div class="entity-card">
-                    <h3 style="color: black;">APP-███</h3>
+                    <h3 style="color: black;">APP-███</h3><br>
                     <p>
                         Only Level-█ can view this entry. Unauthorised viewing is grounds for <b>execution</b>.
-                    </p>
+                    </p><br>
                     <a id="check001" href="redirect.html">View Entry</a>
                 </div>
             </div>
     </main>
 
-    <!-- FOOTER SECTION -->
     <<my-footer></my-footer>
 </body>
 <script>
@@ -89,7 +83,7 @@
 			if(sessionStorage.getItem("001") === null){
 				event.preventDefault();
 				alert("Insufficient Credentials; proceeding to login.");
-				window.location.href = "./Login_page.html";
+				window.location.href = "Login_page.html";
 				
 			}
 			else {
