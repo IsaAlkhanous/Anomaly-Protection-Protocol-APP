@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./images/app.ico">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
-   <script rel=module src="./js/main.js"> </script>
+   <script src="main.js"></script>
         
     
     <script>
@@ -16,7 +17,7 @@
         function pickImage()
         {
             var index = Math.floor( Math.random() * 3 );
-            iconImg.setAttribute( "src","/images/" + pictures[ index ] + ".png" );
+            iconImg.setAttribute( "src","./images/" + pictures[ index ] + ".png" );
             iconImg.setAttribute( "alt", descriptions[ index ] );
         }
 
@@ -29,14 +30,14 @@
         window.addEventListener( "load", start, false );
     </script>
 </head>
-<body class="eye">
-    <my-header></my-header>
+<body>
+    <my-header path=''></my-header>
 
   <h1>About the APP Foundation</h1>
   <table>
      <main>
         <nav>
-            <img id = "image" src = "moriarty.png" alt = "Common Programming Error">
+            <img id = "image" src = "./images/moriarty.png" alt = "Common Programming Error">
         </nav>
         <div class="entry">
             <p>

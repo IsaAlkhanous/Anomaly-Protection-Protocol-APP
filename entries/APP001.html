@@ -4,10 +4,10 @@
 		<link rel ='icon' type="image/x-icon" href="../images/app.ico">
 		<title>APP-001 - APP Foundation</title>
 		<link rel="stylesheet" href="../styles.css">
-		<script type=module src="../js/main.js"></script>
+		<script src="../main.js"></script>
 	</head>
 	<body>
-		<my-header></my-header>
+		<my-header path='../'></my-header>
 		
 		<main>
 		<nav>
@@ -78,9 +78,9 @@
 		const name = sessionStorage.getItem("001");
 		const place = document.querySelector("#username");
 		place.innerHTML = name;
-		setTimeout(seentoomuch,2000)
+		setTimeout(seentoomuch,10000)
 		function seentoomuch(){
-			alert("ERROR.. UNAUTHORISED ACCESS DETECTED")
+			alert("ERROR... UNAUTHORISED ACCESS DETECTED")
 			window.location.replace('https://www.google.com')
 		}
 	</script>
