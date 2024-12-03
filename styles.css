@@ -384,3 +384,15 @@ input[type="password"]{
 	box-shadow: 0 0 8px crimson;
 	padding: 13px 95px;
   }
+/*  contact us page*/
+.blocks{margin: 2%;
+	padding-bottom: 1%;
+	border: 5px solid maroon;
+	border-radius: 5px;
+  display: flex;
+  width: 45%;
+}
+
+.blocks label{
+ margin: 11% auto;
+}
