@@ -17,7 +17,6 @@ class myHeader extends HTMLElement{
       <a href="${path}entities.html">Entities</a>&emsp;
         <a href="${path}about.html">About</a>&emsp;
         <a href="${path}community.html">Community</a>&emsp;
-        <a href="${path}resources.html">Resources</a>&emsp;
         <a href="${path}sister_sites.html">Sister Sites</a>&emsp;
         <a href="${path}contact.html">Contact Us</a>&emsp;
       </div>
